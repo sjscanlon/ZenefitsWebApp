@@ -1,12 +1,12 @@
 var $TABLE = $('#table');
 var $BTN = $('#export-btn');
 var $EXPORT = $('#export');
+var theContent = $('#content');
 
 $('.table-add').click(function () {
     var $clone = $TABLE.find('tr.hide').clone(true).removeClass('hide table-line');
     $TABLE.find('table').append($clone);
-    var editedContent   = $TABLE.html();
-    localStorage.newContent = editedContent;
+    
 });
 
 $('.table-remove').click(function () {
@@ -23,9 +23,7 @@ $('.table-down').click(function () {
     var $row = $(this).parents('tr');
     $row.next().after($row.get(0));
 });
-$('#save').on('click', function(){
 
-});
 // A few jQuery helpers for exporting only
 jQuery.fn.pop = [].pop;
 jQuery.fn.shift = [].shift;
@@ -52,7 +50,6 @@ $BTN.click(function () {
 
         data.push(h);
     });
-
 
     // Output the result
     $EXPORT.text(JSON.stringify(data));

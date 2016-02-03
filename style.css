@@ -81,18 +81,12 @@ body {
     border-color: #FFFFFF;
 }
 
-.note-button:hover,.note-button:active,.note-button:focus {
+.note-button:hover {
     background-color: #FFD737 !important;
 }
 
-.add-btn {
-    background-color: #FFAA00;
-    border-color: #FFAA00;
-}
-
-.add-btn:hover, .add-btn:active, .add-btn:focus {
-    background-color: #BF8F30;
-    border-color: #FFAA00;
+.note-button:active, .note-button:focus {
+    background-color: #A66F03 !important;
 }
 
 .fa-plus {
@@ -136,6 +130,20 @@ body {
 
 .glyphicon {
     font-size: 20px;
+}
+
+.table-title {
+    padding-left: 20px !important;
+}
+
+.chevron {
+    width: 15px !important;
+    padding-right: 0px !important;
+    padding-left: 20px !important;
+}
+
+.note-text {
+    padding-left: 0px !important;
 }
 
 .table-remove {
