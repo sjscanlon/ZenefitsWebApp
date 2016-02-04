@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Simple notes web app, can add, remove, and edit notes.">
+    <meta name="keyword" content="Notes Web App Simple List ToDo"
+    <meta name="author" content="Steven Scanlon">
 
+    <link rel="icon" href="favicon.ico">
     <title>Notes Mobile</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,7 +29,7 @@
 
 <body>
 
-
+<!-- Header consisting of button to add notes and title. -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <button type="button" class="table-add btn btn-default note-button"><i class="fa fa-plus"></i></button>
     <div class="container-fluid">
@@ -40,19 +39,12 @@
     </div>
 </nav>
 
-<div class="container-fluid main-body">
-
-</div>
-
+<!-- Editable table with small header and a sample entry for a note that will be cloned by hitting the button in the header. -->
 <div id="table" class="table-editable">
-
     <table class="table">
         <tr>
             <th class="table-title">Notes</th>
             <th></th>
-        </tr>
-        <tr>
-            <!-- This is where each note will go -->
         </tr>
         <!-- This is our clonable table line -->
         <tr id="content" class="hide">
@@ -65,16 +57,16 @@
     </table>
 </div>
 
-</div>
+<!-- Footer with button to clear all note entries. -->
 <div class="footer">
         <a type="button" class="btn btn-primary bottom-nav clear-all" href="index.html"><i class="fa fa-times"></i><br>Clear All</a>
 </div>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Script to make button tooltips work-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="table.js"></script>
 </body>
