@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Exo-Regular;
-    src: url("Fonts/exo/Exo-Regular.otf") format("opentype");
+    font-family: Quicksand-Regular;
+    src: url("quicksand/Quicksand-Regular.otf") format("opentype");
 }
 
 /*
@@ -28,6 +28,7 @@ body {
 .navbar-brand {
     float:none;
     padding-left: 50px;
+    font-family: Quicksand-Regular;
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -109,6 +110,7 @@ body {
     background-color: #1D7471;
     border-color: #1D7471;
     text-align: center;
+    font-family: Quicksand-Regular;
     width: 100%;
 }
 
