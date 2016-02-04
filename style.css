@@ -116,7 +116,7 @@ body {
     background-color: #FFAA00;
     border-color: #FFAA00;
     text-align: center;
-    width: calc(100% / 3);
+    width: 100%;
 }
 
 .bottom-nav:hover, .bottom-nav:active, .bottom-nav:focus {
